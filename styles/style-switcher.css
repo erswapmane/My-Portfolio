@@ -57,10 +57,10 @@
 	cursor: pointer;
 }
 .style-switcher .color-1 {
-	background-color: #f83535;
+	background-color: darkorange;
 }
 .style-switcher .color-2 {
-	background-color: #ec9142;
+	background-color: darkturquoise;
 }
 .style-switcher .color-3 {
 	background-color: #1fc586;

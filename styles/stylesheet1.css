@@ -1,6 +1,3 @@
-/* font begins */
-
-/* font ends */
 
 /* ********************** 
 custom animation begins
@@ -141,40 +138,19 @@ img {
 
 /* preloader begins */
 .preloader {
+	
 	position: fixed;
 	left: 0;
 	top: 0;
 	height: 100%;
 	width: 100%;
 	z-index: 1500;
-	background-color: var(--bg-black-50);
+	background-color: #ffffff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.preloader.fade-out {
-	opacity: 0;
-	transition: all 0.6s ease;
-}
-.preloader .box {
-	width: 66px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-.preloader .box div {
-	height: 15px;
-	width: 15px;
-	background-color: var(--skin-colo);
-	border-radius: 50%;
-	animation: loaderAni 1s ease infinite;
-}
-.preloader .box div:nth-child(2) {
-	animation-delay: 0.1s;
-}
-.preloader .box div:nth-child(3) {
-	animation-delay: 0.2s;
-}
+
 /* preloader ends */
 
 /* HEADER section begins*/
@@ -392,7 +368,7 @@ Home section begins
 }
 .effect-4 {
 	border-top: 30px solid transparent;
-	border-left: 30px solid #ffe604;
+	border-left: 30px solid #06d79c;
 	left: 30%;
 	top: 20%;
 	animation: spin 15s linear infinite;
@@ -400,7 +376,7 @@ Home section begins
 .effect-4::before {
 	content: "";
 	border-top: 30px solid transparent;
-	border-left: 30px solid #ffae00;
+	border-left: 30px solid #06d79c;
 	position: absolute;
 	opacity: 0.5;
 	left: -35px;
@@ -423,13 +399,33 @@ Home section begins
 	height: 100%;
 }
 .effect-6 {
+	color: gold;
+	text-align: center;
+	justify-content: center;
 	width: 280px;
 	height: 280px;
-	border: 30px solid #ffe135;
-	border-radius: 20%;
-	right: -7.5%;
+	border: 30px solid #ff05d5;
+	border-radius: 50%;
+	right: -8%;
 	top: -190px;
 	z-index: -2;
+	animation-name: swap;
+	animation-duration: 15s;
+	animation-iteration-count:3;
+	animation-direction: alternate;
+	
+}
+@keyframes swap {
+	from{
+		margin-top: 0%;
+	}
+	50%{
+		margin-top: 100px;
+	}
+	to{
+		margin-right: 100%;
+	}
+	
 }
 .home-section .full-screen {
 	padding: 50px 0;
@@ -859,6 +855,7 @@ Portfolio menu begins
 }
 .portfolio-section .filter-item:hover:not(.active) {
 	opacity: 0.6;
+	
 }
 .portfolio-section .filter-item.active {
 	color: var(--skin-color);
