@@ -108,6 +108,7 @@ about tab section
 
 function bodyScrollingToggle() {
 	document.body.classList.toggle("hidden-scrolling");
+	
 }
 /* --------------------
 portfolio filter and popup section
